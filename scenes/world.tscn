@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://77idyt4og4ti"]
+[gd_scene load_steps=5 format=3 uid="uid://77idyt4og4ti"]
 
 [ext_resource type="Texture2D" uid="uid://ds36sueeuwx2p" path="res://assets/art/backgrounds/pitch-background.png" id="1_4wyf3"]
 [ext_resource type="Texture2D" uid="uid://bebneg288phyh" path="res://assets/art/backgrounds/pitch-pattern.png" id="2_k0juu"]
 [ext_resource type="Texture2D" uid="uid://sbonkv8m47rn" path="res://assets/art/backgrounds/pitch-lines.png" id="3_71j4m"]
+[ext_resource type="PackedScene" uid="uid://kef2ms3gh0tr" path="res://scenes/characters/player.tscn" id="4_k0juu"]
 
 [node name="World" type="Node2D"]
 
@@ -21,3 +22,6 @@ centered = false
 [node name="Lines" type="Sprite2D" parent="Backgrounds"]
 texture = ExtResource("3_71j4m")
 centered = false
+
+[node name="Player" parent="." instance=ExtResource("4_k0juu")]
+position = Vector2(132, 102)
